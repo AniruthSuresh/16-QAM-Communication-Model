@@ -14,18 +14,18 @@ This project focuses on developing and simulating a communication system utilizi
 
 #### Transmitter
 
-The transmitter section encodes the digital data into 16-QAM symbols. It prepares the symbols for transmission by modulating them according to the 16-QAM scheme.
+The transmitter encodes digital data into 16-QAM symbols. It uses root-raised cosine pulses for pulse shaping, which helps in minimizing intersymbol interference and improving signal quality.
 
 ![Transmitter Block Diagram](https://github.com/user-attachments/assets/f08f4927-c300-40f6-88c8-531c491e516f)
 
 #### Receiver
 
-The receiver section demodulates the received symbols to recover the original data. It performs decoding and error correction to ensure accurate data retrieval from the transmitted symbols.
+The receiver demodulates the received symbols to recover the original data. It includes a matched filter to process the signals shaped by root-raised cosine pulses, and performs decoding and error correction to ensure accurate data retrieval.
 
 ![Receiver Block Diagram](https://github.com/user-attachments/assets/961f5ec7-9d8a-4d21-95cb-9dc48e6d625a)
 
 ### Performance Evaluation
 
-The project also investigates how the Bit Error Rate (BER) of the communication system varies with different levels of Signal-to-Noise Ratio (SNR) for both memory and memoryless AWGN (Additive White Gaussian Noise) channels.
+The project evaluates the Bit Error Rate (BER) of the communication system across different levels of Signal-to-Noise Ratio (SNR) for both memory and memoryless AWGN (Additive White Gaussian Noise) channels. Additionally, BER vs. SNR curves are plotted to analyze system performance under varying noise conditions.
 
-This model provides valuable insights into 16-QAM modulation and its performance in digital communication systems.
+This model provides valuable insights into 16-QAM modulation, the use of root-raised cosine pulses for signal shaping, and its performance in digital communication systems.
